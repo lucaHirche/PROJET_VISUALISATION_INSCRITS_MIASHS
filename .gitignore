@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# macOS
+.DS_Store
+
+# IDEs
+.idea/
+
+# Build outputs
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor backups
+*~
+*.swp
+*.swo
