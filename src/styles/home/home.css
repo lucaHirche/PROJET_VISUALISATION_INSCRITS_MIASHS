@@ -1,1 +1,52 @@
-@import ""
+
+
+body{
+    background-color: #1f5353;
+}
+.ana{
+    margin: 100px;
+}
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 1.7;
+    font-size: 4rem;
+}
+
+/* .Rea {
+    color: white;
+    margin: 50px;
+    padding: 50px;
+    text-align: left;
+}
+
+h3 {
+    color: white;
+    margin: 100px;
+    text-align: right;
+} */
+
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px ;
+    align-items: flex-end; 
+    background-image: url(../../assets/images/wave.png);
+}
+
+.Rea,h3{
+    color: white;
+}
+
+/* h3{
+    color: white;
+    text-align: right;
+    bottom: 0;
+    padding: 350px 50px;
+} */
+
+
