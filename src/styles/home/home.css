@@ -1,52 +1,25 @@
-
-
-body{
-    background-color: #1f5353;
+body {
+    display: grid;
 }
-.ana{
-    margin: 100px;
+
+.analyse {
+    align-self: center;
+    display: flex; gap: 2rem;
+    align-items: center;
+}
+.analyse img {
+    width: 150px;
+    height: 120px;
 }
 h1 {
-    text-align: center;
-    color: white;
-    line-height: 1.7;
-    font-size: 4rem;
+    line-height: 2ch;
+    font-size: 3rem;
 }
 
-/* .Rea {
-    color: white;
-    margin: 50px;
-    padding: 50px;
-    text-align: left;
-}
-
-h3 {
-    color: white;
-    margin: 100px;
-    text-align: right;
-} */
-
-
-.footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+footer {
     display: flex;
     justify-content: space-between;
-    padding: 40px ;
-    align-items: flex-end; 
-    background-image: url(../../assets/images/wave.png);
+    align-items: flex-end;
+    padding: 2rem;
 }
-
-.Rea,h3{
-    color: white;
-}
-
-/* h3{
-    color: white;
-    text-align: right;
-    bottom: 0;
-    padding: 350px 50px;
-} */
-
 

@@ -1,0 +1,20 @@
+{
+  "name": "projet_visualisation_inscrits_miashs",
+  "version": "1.0.0",
+  "description": "Ce projet a été réalisé dans le cadre du **Défi 2** du cours de Projet Info (L2 MIASHS, Semestre 4). Il consiste en une interface web permettant la visualisation et l'analyse des effectifs inscrits en **L2 MIASHS à l'Université Toulouse - Jean Jaurès (UT2J)**.",
+  "homepage": "https://github.com/lucaHirche/PROJET_VISUALISATION_INSCRITS_MIASHS#readme",
+  "bugs": {
+    "url": "https://github.com/lucaHirche/PROJET_VISUALISATION_INSCRITS_MIASHS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaHirche/PROJET_VISUALISATION_INSCRITS_MIASHS.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
