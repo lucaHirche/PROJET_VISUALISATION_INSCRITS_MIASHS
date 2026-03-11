@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Défi 2.3 - Graphique MIASHS</title>
-<link rel="stylesheet" href="../styles/style.css">
-<link rel="stylesheet" href="../styles/defi-2.3/defi-2.3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Défi 2.3 - Graphique MIASHS</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/defi-2.3/defi-2.3.css">
 </head>
 <body>
+<div id="blur" class=""></div>
+<div class="btn-menu">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"/></svg>
+</div>
+<nav class="menu-navbar">
+    <svg class="btn-close" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M18.36 19.78L12 13.41l-6.36 6.37l-1.42-1.42L10.59 12L4.22 5.64l1.42-1.42L12 10.59l6.36-6.36l1.41 1.41L13.41 12l6.36 6.36z"/></svg>
+    <ul>
+        <li><a href="../../index.html">Accueil</a></li>
+        <li><a href="./defi-2.2.html">Défi 2.2</a></li>
+        <li><a href="./defi-2.3.html">Défi 2.3</a></li>
+        <li><a href="./comparaison1.html">Comparaison 1</a></li>
+        <li><a href="./comparaison2.html">Comparaison 2</a></li>
+        <li><a href="./comparaison3.html">Comparaison 3</a></li>
+        <li><a href="./comparaison4.html">Comparaison 4</a></li>
+        <li><a href="./comparaison5.html">Comparaison 5</a></li>
+
+    </ul>
+</nav>
 
 <div class="container">
-<h1>Évolution des inscriptions en L2 MIASHS par genre</h1>
+    <h1>Évolution des inscriptions en L2 MIASHS par genre</h1>
 
-<div class="chart-container">
-<canvas id="monGraphiqueGenre"></canvas>
-</div>
+    <div class="chart-container">
+        <canvas id="monGraphiqueGenre"></canvas>
+    </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

@@ -16,3 +16,55 @@ body:after {
     background-size: cover;
     z-index: -1;
 }
+
+.btn-menu {
+    width: 60px; height: 30px;
+    position: absolute;
+    right: 30px; top: 15px;
+    border: 1px solid white;
+    border-radius: 50px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    transition: all ease-out 400ms;
+
+    &:hover {
+        background-color: white;
+        path {stroke: black;}
+    }
+}
+
+.menu-navbar {
+    position: fixed; z-index: 5;
+    top: 0; bottom: 0;
+    min-width: 250px;
+    background-color: purple;
+    padding: 2rem;
+    transition: right 600ms ease-out;
+
+    right: -999px;
+}
+.menu-navbar svg {
+    display: flex; justify-content: start;
+    cursor: pointer;
+}
+.menu-navbar ul {
+    list-style: none;
+    padding: 0; margin: 4rem;
+    text-align: center;
+    display: grid;
+    gap: 1.5rem;
+}
+.menu-navbar a {
+    color: white;
+    text-decoration: unset;
+}
+
+.bg-blured {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+#blur {
+    transition: all 600ms ease-out;
+}
