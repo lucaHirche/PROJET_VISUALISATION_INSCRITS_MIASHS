@@ -1,1 +1,54 @@
-@import ""
+/*
+.chart-zone {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    
+}
+
+.chart-container {
+    background: white;
+    width: 80vw;
+    max-width: 1000px;
+    margin: 80px auto; 
+}
+
+h1{
+    font-size: 30;
+    text-align: center;
+    text-decoration: underline;
+}
+
+*/
+
+
+.chart-container {
+    width: 90vw;
+    margin-block: 4rem;
+}
+.chart-container h1 {
+    text-decoration: underline;
+    margin-bottom: 4rem;
+}
+.chart-container canvas {
+    background-color: white /*rgb(0, 0, 0, 0.5)*/;
+    padding: 4rem;
+    border-radius: 18px;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    align-content: start;
+    text-align: center;
+}
+
+footer {
+    align-self: flex-end;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+
