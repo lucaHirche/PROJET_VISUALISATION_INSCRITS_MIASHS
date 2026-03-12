@@ -4,51 +4,38 @@ let Data = null
 const xhr = new XMLHttpRequest()
 const options = {
     method: "get",
-    url: "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-principaux-diplomes-et-formations-prepares-etablissements-publics/records/?limit=10&offset=0&select=*&where=etablissement_id_uai%3D%220311383K%22+AND+diplom%3D%222300031%22"
+    url: "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-principaux-diplomes-et-formations-prepares-etablissements-publics/records/?limit=15&offset=15&refine=annee_universitaire%3A2024-25&refine=diplom%3A2300031&refine=diplome_rgp%3ALicence&refine=disciplines_selection%3ASciences+et+sciences+de+l%27ing%C3%A9nieur&refine=niveau_lib%3A2%C3%A8me+ann%C3%A9e&select=*"
 }
 
 xhr.open(options.method, options.url)
 xhr.onreadystatechange = (() => {
     if (xhr.readyState === 4 && xhr.status === 200) {
         Data = JSON.parse(xhr.responseText).results
-        const [miashs_l2, miashs_l1] = Data.filter(data => data.annee_universitaire === "2016-17")
-        const effectif_miashs_l1 = {
-            n_hommes : miashs_l1.hommes,
-            n_femmes : miashs_l1.femmes
-        }
-        const effectif_miashs_l2 = {
-            n_hommes : miashs_l2.hommes,
-            n_femmes : miashs_l2.femmes
+        let labels = []
+        let datasets = { hommes : [], femmes : [] }
+
+        for (const eachData of Data) {
+            labels.push(eachData.etablissement_actuel_lib)
+            datasets.hommes.push(eachData.hommes)
+            datasets.femmes.push(eachData.femmes)
         }
 
         const data = {
-            labels : ["Hommes", "Femmes"],
+            labels : labels,
             datasets : [
                 {
-                    label : 'Licence 1',
-                    data : Object.values(effectif_miashs_l1),
-                    backgroundColor: [
-                        '#4E79A7',
-                        '#F28E8C'
-                    ],
-                    borderColor : [
-                        '#2F4F6F',
-                        '#C96C72'
-                    ],
-                    borderWidth : 2
+                    label: "Hommes",
+                    data: datasets.hommes,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgb(54, 162, 235)',
+                    borderWidth: 1
                 },
                 {
-                    label : 'Licence 2',
-                    data : Object.values(effectif_miashs_l2),
-                    backgroundColor: [
-                        '#3B5BA5',
-                        '#E07A9B'
-                    ],
-                    borderColor : [
-                        '#2F4F6F',
-                        '#C96C72'
-                    ],
-                    borderWidth : 2
+                    label: "Femmes",
+                    data: datasets.femmes,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    borderWidth: 1
                 }
             ]
         }
@@ -87,9 +74,9 @@ xhr.onreadystatechange = (() => {
                     },
                     title : {
                         display: true,
-                        text: "Effectifs Hommes/Femmes des inscrits en Licence 1 et 2 MIASHS de l'année académique 2016-17",
+                        text: "Effectifs Hommes/Femmes des inscrits en Licence 2 MIASHS de l'année académique 2024-25 toutes universités confondues.",
                         color : '#FFFFFF',
-                        font : { size : 20}
+                        font : { size : 30}
                     }
                 }
             }

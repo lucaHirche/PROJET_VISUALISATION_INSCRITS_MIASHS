@@ -1,25 +1,28 @@
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 .container {
-width: 80%;
-background-color: white;
-padding: 20px;
-border-radius: 8px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 h1 {
-text-align: center;
-color: #333;
+    text-align: center;
+    color: #333;
 }
 
 .chart-container {
-position: relative;
-height: 60vh; /* Hauteur relative à l'écran */
-width: 100%;
+    position: relative;
+    height: 60vh; /* Hauteur relative à l'écran */
+    width: 100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
 }
