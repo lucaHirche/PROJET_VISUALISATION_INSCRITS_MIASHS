@@ -30,15 +30,15 @@ xhr.onreadystatechange = function () {
             labels: annee,
             datasets: [
                 {
-                    label: 'Les inscrits en 1ère année et 2ème année à Paris Cité',
-                    backgroundColor: 'rgb(86, 26, 129)',
-                    borderColor: 'rgb(199, 0, 0)',
+                    label: "Hommes",
+                    backgroundColor: 'rgba(97, 195, 208, 0.73)',
+                    borderColor: 'rgb(213, 61, 61)',
                     data: hommes_effectif,
                 },
                 {
-                    label: 'Les inscrites en 1ère année et 2ème année à Paris Cité',
-                    backgroundColor: 'rgb(199, 0, 152)',
-                    borderColor: 'rgb(159, 199, 0)',
+                    label: "Femmes",
+                    backgroundColor: 'rgba(200, 161, 97, 0.78)',
+                    borderColor: 'rgb(213, 69, 69)',
                     data: femmes_effectif
                 }
             ]
@@ -49,8 +49,40 @@ xhr.onreadystatechange = function () {
             data: data,
             options: {
                 scales: {
+                    x: {
+                        grid: {
+                            color: "rgba(255,255,255)"
+                        },
+                        ticks: {
+                            color: "#FFFFFF",
+                            font: {
+                                size: 40
+                            }
+                        }
+                    },
                     y: {
-                        beginAtZero: true
+                        beginAtZero: true,
+                        grid: {
+                            color: "rgba(255,255,255)"
+                        },
+                        ticks: {
+                            color: "#FFFFFF",
+                            font: {
+                                size: 40
+                            }
+                        }
+                    },
+                },
+                plugins: {
+                    legend: {
+                        display: true,
+                        labels: {
+                            color: 'rgb(255, 255, 255)',
+                            font: {
+                                size: 40
+                            }
+                        },
+
                     }
                 }
             },

@@ -13,14 +13,14 @@
     max-width: 1000px;
     margin: 80px auto; 
 }
-
+*/
 h1{
-    font-size: 30;
+    font-size: 80px;
     text-align: center;
     text-decoration: underline;
 }
 
-*/
+
 
 
 .chart-container {
@@ -32,7 +32,7 @@ h1{
     margin-bottom: 4rem;
 }
 .chart-container canvas {
-    background-color: white /*rgb(0, 0, 0, 0.5)*/;
+    /* background-color: white rgb(0, 0, 0, 0.5); */
     padding: 4rem;
     border-radius: 18px;
 }
@@ -50,5 +50,3 @@ footer {
     text-align: center;
     margin-top: 4rem;
 }
-
-
