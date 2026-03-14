@@ -6,6 +6,7 @@ node_modules/
 
 # IDEs
 .idea/
+.vscode/
 
 # Build outputs
 dist/
@@ -23,3 +24,4 @@ npm-debug.log*
 *~
 *.swp
 *.swo
+/.vscode/

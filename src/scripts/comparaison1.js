@@ -19,7 +19,7 @@ xhr.onreadystatechange = function () {
         let hommes_effectif = []
         let femmes_effectif = []
 
-        for (dt of Data) {
+        for (let dt of Data) {
             annee.push(dt.annee_universitaire)
             hommes_effectif.push(dt.hommes)
             femmes_effectif.push(dt.femmes)
