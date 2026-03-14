@@ -1,14 +1,19 @@
 h1 {
     
-    width: fit-content;
     padding: 2px;
+    
+}
+
+footer {
+  
+    text-align: center;
+    background-color:rgba(50,50,50,0.6) ;
     
 }
 
 canvas {
     background-color:rgba(50,50,50,0.6) ;
     width: 50%;
-    height: 400px;
     margin: auto;
     position: relative;
     border: 3px solid;
@@ -20,8 +25,10 @@ canvas {
     padding: 5px;
   }
 
-  p li {
-    font-family: 'Courier New', Courier, monospace ;
+  p,li {
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+
   }
 
   section{
