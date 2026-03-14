@@ -30,13 +30,13 @@ xhr.onreadystatechange = function () {
             labels: annee,
             datasets: [
                 {
-                    label: "Hommes",
+                    label: "L'effectif des hommes",
                     backgroundColor: 'rgba(97, 195, 208, 0.73)',
                     borderColor: 'rgb(213, 61, 61)',
                     data: hommes_effectif,
                 },
                 {
-                    label: "Femmes",
+                    label: "L'effectif des femmes",
                     backgroundColor: 'rgba(200, 161, 97, 0.78)',
                     borderColor: 'rgb(213, 69, 69)',
                     data: femmes_effectif
