@@ -3,7 +3,7 @@ const container = document.getElementById("data")
 let Data = null
 const xhr = new XMLHttpRequest()
 
-xhr.open("GET", "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-principaux-diplomes-et-formations-prepares-etablissements-publics/records/?limit=10&offset=0&select=*&where=etablissement_lib%3D%22Universit%C3%A9+d%27Angers%22+AND+diplome_rgp%3D%22Licence%22+AND+sect_disciplinaire_lib%3D%22Sciences+juridiques%22+AND+etablissement_id_uai%3D%220490970N%22+AND+etablissement_id_uai_source%3D%220490970N%22+AND+diplom%3D%222300002%22")
+xhr.open("GET","https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-principaux-diplomes-et-formations-prepares-etablissements-publics/records/?limit=10&offset=0&select=*&where=etablissement_lib%3D%22Universit%C3%A9+d%27Angers%22+AND+diplome_rgp%3D%22Licence%22+AND+sect_disciplinaire_lib%3D%22Sciences+juridiques%22+AND+etablissement_id_uai%3D%220490970N%22+AND+etablissement_id_uai_source%3D%220490970N%22+AND+diplom%3D%222300002%22")
 
 xhr.onreadystatechange = function () {
 
@@ -25,19 +25,17 @@ xhr.onreadystatechange = function () {
       femmes.push(i.femmes)
     }
 
+
     const data = {
 
       labels: annee_universitaire,
-
       datasets: [{
         label: "Effectifs",
         data: effectif,
         backgroundColor: [
-          'rgb(95, 95, 110)',
-          'rgb(198, 187, 192)',
-          'rgb(215, 165, 160)',
-          'rgb(201, 203, 207)',
-          'rgb(255, 217, 201)'
+          '#b2d8d8', '#fdfcf0', '#d1cfe2', '#9ebad9', '#a28497', 
+                        '#e2cfc4', '#96abb1', '#c7d3d4', '#b4a7af', '#8fa3a6'
+         
         ]                                                                                 
       }]
 
@@ -50,10 +48,13 @@ xhr.onreadystatechange = function () {
         plugins: {
             legend: {
                 display: true,
-                position: "left",
-                
+              position: "left",
                 labels: {
-                    color: 'white'
+                    color: 'white',
+                    font:{
+                      size:20,
+                      family: "Arial"
+                    }
                 }
             }
         }

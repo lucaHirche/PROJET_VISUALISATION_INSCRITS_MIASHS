@@ -1,14 +1,22 @@
-.chart-container {
-    width: 800px;
-}
-.chart-container h1 {
+ .chart-container p{
     text-decoration: underline;
-}
-.chart-container canvas {
-    background-color: rgb(0, 0, 0, 0.5);
-    padding: 4rem;
-    border-radius: 18px;
-}
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+ }
+
+
+
+ h2{
+    color: #bfcfef;
+    text-align: center;
+    margin:0rem;
+    text-decoration: underline;
+    line-height: 1.6;
+
+ }
+
 
 body {
     min-height: 100vh;
@@ -16,11 +24,20 @@ body {
     place-content: center;
     align-content: start;
     text-align: center;
+
 }
 
-footer {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    translate: -50%;
+p{
+    text-align: justify;
 }
+
+h3{
+
+    text-decoration: underline;
+    color: rgb(196, 223, 247);
+
+}
+ li{
+    text-align: justify;
+}
+
