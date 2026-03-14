@@ -1,21 +1,23 @@
- .chart-container p{
+.chart-container p{
     text-decoration: underline;
     text-align: center;
     margin-top: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
- }
+}
 
+.title {
+    font-size: 50px;
+    text-transform: uppercase;
+}
 
- h2{
+h2{
     color: #bfcfef;
     text-align: center;
-    margin:0rem;
+    margin: 0;
     text-decoration: underline;
     line-height: 1.6;
-    font-size:40PX;
-
- }
+}
 
 
 body {
@@ -23,24 +25,18 @@ body {
     display: grid;
     place-content: center;
     align-content: start;
-    text-align: center;
-
 }
 
 p{
     text-align: justify;
-    font-size : 25px;;
 }
 
 h3{
 
     text-decoration: underline;
     color: rgb(196, 223, 247);
-    font-size: 40px;
-
 }
- li{
+li{
     text-align: justify;
-    font-size: 30px;
 }
 

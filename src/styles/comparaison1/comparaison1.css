@@ -1,64 +1,26 @@
-/*
-.chart-zone {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center; 
-    align-items: center;  
-    
-}
-
-.chart-container {
-    background: white;
-    width: 80vw;
-    max-width: 1000px;
-    margin: 80px auto; 
-}
-*/
 h1{
-    font-size: 80px;
+    font-size: 50px;
     text-align: center;
     text-decoration: underline;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h2{
-    font-size : 70px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: underline;
-}
-
-p1{
-    font-size : 40px;
-    text-decoration : underline;
-    font-style: italic;
-      
-}
-
-p2{
-    font-size: 30px;
-    text-align: left;
-    margin-left: 1%;
-    font-style: oblique;
-}
-
-p3{
-    font-size: 35px;
-    text-align: left;
-    margin-left: 1%;
 }
 
 
 
 .chart-container {
-    width: 50vw;
-    margin : 4rem auto;
+    /*width: 75vw;*/
+    /*margin : 4rem auto;*/
 }
 .chart-container h1 {
     text-decoration: underline;
     margin-bottom: 4rem;
 }
 .chart-container canvas {
-    /* background-color: white rgb(0, 0, 0, 0.5); */
     padding: 4rem;
     border-radius: 18px;
 }
@@ -68,7 +30,6 @@ body {
     display: grid;
     place-content: center;
     align-content: start;
-    text-align: center;
 }
 
 footer {
