@@ -22,39 +22,36 @@ h1{
 }
 
 h2{
-    font-size : 75px;
+    font-size : 70px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: underline;
 }
 
 p1{
-    font-size : 50px;
+    font-size : 40px;
     text-decoration : underline;
     font-style: italic;
       
 }
 
 p2{
-    font-size: 35px;
+    font-size: 30px;
     text-align: left;
     margin-left: 1%;
     font-style: oblique;
 }
 
 p3{
-    font-size: 40px;
+    font-size: 35px;
     text-align: left;
     margin-left: 1%;
 }
 
 
 
-
-
-
 .chart-container {
-    width: 90vw;
-    margin-block: 4rem;
+    width: 50vw;
+    margin : 4rem auto;
 }
 .chart-container h1 {
     text-decoration: underline;
