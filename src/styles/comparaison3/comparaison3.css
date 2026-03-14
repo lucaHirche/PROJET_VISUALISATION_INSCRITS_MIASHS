@@ -1,1 +1,20 @@
-@import ""
+.resume {
+    max-width: 900px;
+    margin: 40px auto;
+    line-height: 1.6;
+}
+
+.resume h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.resume p {
+    font-size: 18px;
+}
+
+canvas{
+width:50% ;
+margin:auto;
+display:block;
+}

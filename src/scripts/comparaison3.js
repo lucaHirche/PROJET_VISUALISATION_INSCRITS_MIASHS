@@ -15,10 +15,8 @@ xhr.onreadystatechange = () => {
 
         Data = JSON.parse(xhr.responseText).results;
 
-        
         let labels = [...new Set(Data.map(d => d.annee_universitaire))];
         labels.sort();
-
 
         let nantesTotals = [];
         let lemansTotals = [];
@@ -37,16 +35,16 @@ xhr.onreadystatechange = () => {
                 {
                     label: "Nantes",
                     data: nantesTotals,
-                    backgroundColor: 'rgba(0, 206, 209, 0.8)', 
-                    borderColor: 'rgb(0, 206, 209)',
-                    borderWidth: 1
+                    backgroundColor: 'rgba(0,206,209,0.8)',
+                    borderColor: 'rgb(0,206,209)',
+                    borderWidth: 2
                 },
                 {
                     label: "Le Mans",
                     data: lemansTotals,
-                    backgroundColor: 'rgba(255, 165, 0, 0.8)', 
-                    borderColor: 'rgb(255, 165, 0)',
-                    borderWidth: 1
+                    backgroundColor: 'rgba(255,165,0,0.8)',
+                    borderColor: 'rgb(255,165,0)',
+                    borderWidth: 2
                 }
             ]
         };
@@ -55,30 +53,62 @@ xhr.onreadystatechange = () => {
             type: 'line',
             data: chartData,
             options: {
+
                 responsive: true,
+
                 plugins: {
+
                     title: {
                         display: true,
-                        text: "Effectifs L1 Langues étrangères : Nantes / Le Mans par année",
+                        text: "Effectifs L1 langues étrangères Université du Mans / Université de Nantes",
                         color: "#FFFFFF",
-                        font: { size: 24 }
+                        font: { size: 26 }
                     },
+
                     legend: {
+                        position: "bottom",
                         labels: { color: "#FFFFFF" }
+                    },
+
+                    tooltip: {
+
+                        backgroundColor: "#222",
+                        titleColor: "#fff",
+                        bodyColor: "#FFA500",
+                        borderColor: "#fff",
+                        borderWidth: 1,
+
+                        yAlign: "bottom",
+                        xAlign: "left",
+
+                        callbacks: {
+                            label: function(context) {
+                                return "Nombre inscrit est : " + context.raw
+                            }
+                        }
                     }
                 },
+
                 scales: {
                     x: {
-                        stacked: false,
                         grid: { color: "rgba(255,255,255,0.2)" },
                         ticks: { color: "#FFFFFF" },
-                        title: { display: true, text: "Année universitaire", color: "#FFFFFF" }
+                        title: {
+                            display: true,
+                            text: "Année universitaire",
+                            color: "#FFFFFF"
+                        }
                     },
+
                     y: {
                         beginAtZero: true,
                         grid: { color: "rgba(255,255,255,0.2)" },
                         ticks: { color: "#FFFFFF" },
-                        title: { display: true, text: "Nombre d'étudiants", color: "#FFFFFF" }
+                        title: {
+                            display: true,
+                            text: "Nombre d'étudiants",
+                            color: "#FFFFFF"
+                        }
                     }
                 }
             }
