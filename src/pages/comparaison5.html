@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="../styles/comparaison5/comparaison5.css">
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../scripts/comparaison5.js" defer></script>
     <script src="../scripts/main.js" defer></script>
 
     <title>Comparaison 5</title>
 </head>
 <body>
-<div id="blur" class=""></div>
-<div class="btn-menu">
+    <h1>Statistique en Biologie médicale</h1>
+    <div class="chart-container">
+    <div id="blur" class=""></div>
+
+    <div class="btn-menu">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"/></svg>
 </div>
 <nav class="menu-navbar">
@@ -30,5 +34,39 @@
 
     </ul>
 </nav>
+
+<canvas id="data"></canvas>
+
+<section>
+    <h2>Description du graphique</h2>
+    <ol>
+        <li><u>Description des données:</u></li>
+        <p>Le graphique en ligne présenté çi dessus nous permet d'observer la repartition des étudiant onscrit en biologie médicale dans deux universités notamment celle de Lorraine et celle de Strasbourg sur plusieurs annnées universitaires.
+            Les données qui nous ont permises de realiser ce graphique sont issues de l’opendata du ministère de l’enseignement supérieur.
+            Pour faciliter son utlisation on a eu acces à une API et avons choisis comme critère de selection:</p>
+            <div>
+            <ul>
+                <li><strong>diplom</strong>=5000027</li>
+                <li><strong>UAI=</strong></li>
+                    <ul>
+                        <li>Université de Lorraine: 0542493S </li>
+                        <li>Université de Strasbourg: 0673021V </li>
+                    </ul>
+            </ul>
+            </div>    
+            
+            <li><u>Interpretation du graphique:</u></li>
+
+            <p>Après certains ajustements, le graphique est plus lisible et respecte désormais la chronologie des années universitaires. </p>
+
+            <ul>
+                <li>Entre 2011-12 et 2013-14, le nombre d’inscrits à l’université de Lorraine reste globalement stable, avec seulement une variation d’un étudiant. À l’université de Strasbourg, on observe d’abord une légère hausse entre 2011-12 et 2012-13, puis une baisse de cinq inscrits entre 2012-13 et 2013-14</li>
+                <li>Par la suite, les effectifs augmentent dans les deux universités : à Strasbourg jusqu’en 2015-16 et à Lorraine jusqu’en 2014-15, avant de se stabiliser jusqu’en 2015-16. Entre 2015-16 et 2016-17, une baisse est observée dans les deux universités, plus marquée à Lorraine.</li>
+                <li>À partir de 2017-18, les effectifs augmentent de nouveau. L’université de Lorraine atteint son maximum en 2022-23 avec 31 inscrits. Strasbourg atteint également un pic avec 38 inscrits, puis connaît une baisse progressive jusqu’en 2021-22 (12 inscrits), avant d’augmenter de nouveau jusqu’en 2024-25.</li>
+            </ul>    
+        
+    </ol>
+</section>
+
 </body>
 </html>

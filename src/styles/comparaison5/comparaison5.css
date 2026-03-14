@@ -1,1 +1,29 @@
-@import ""
+h1 {
+    
+    width: fit-content;
+    padding: 2px;
+    
+}
+
+canvas {
+    background-color:rgba(50,50,50,0.6) ;
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    border: 3px solid;
+    border-radius: 15px;
+    
+  }
+
+  li {
+    padding: 5px;
+  }
+
+  p li {
+    font-family: 'Courier New', Courier, monospace ;
+  }
+
+  section{
+    padding: 3px;
+  }
